@@ -11,7 +11,8 @@ import SwiftUI
 struct Follow_App_Data_FlowApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ProfileView()
+                .environmentObject(ProfileViewModel())
         }
     }
 }
